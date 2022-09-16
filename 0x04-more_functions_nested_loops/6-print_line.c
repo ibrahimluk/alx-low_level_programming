@@ -1,10 +1,12 @@
 #include "main.h"
+
 /**
  * print_line - prints a line
  *
  * @n: number of times the character _ should be printed
- *
+ *Return: void
  */
+ 
 void print_linear(int n)
 {
 	int i;
