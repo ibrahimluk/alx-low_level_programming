@@ -2,18 +2,24 @@
 
 /**
  * print_line - prints a line
- *
- * @n: number of times the character _ should be printed
+ * @n: length of the line
+ * 
  *Return: void
  */
  
 void print_linear(int n)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; i < n; i++)
+	if (n > 0)
 	{
-		_putchar('_');
+		while (i < n)
+		{
+			_putchar(95);
+			i++;
+		}
 	}
 	_putchar('\n');
 }
+
+	
