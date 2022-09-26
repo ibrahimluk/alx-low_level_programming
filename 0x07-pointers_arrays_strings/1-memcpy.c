@@ -1,19 +1,18 @@
 #include "main.h"
 
 /**
- * _strchr - function that locates a character in a string
+ * _memcpy - copies memory area
  *
- * @s: string to be searched
- * @c: character to search for
- * Return: pointer to first occurence of c if it's there or NULL otherwise
+ * @dest: copy destination
+ * @src: copy source
+ * @n: bytes of memory to copy
+ * Return: pointer to modified string
  */
-char *_strchr(char *s, char c)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	do {
-		if (*s == c)
-		{
-			return (s);
-		}
-	}while (*s++);
-	return (NULL);
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+		dest[i] = src[i];
+	return (dest);
 }
