@@ -16,6 +16,11 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(1);
 	}
+	if (atoi(argv[1]) < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
 	printf("%.2x", *(unsigned char *)a);
 	a++;
 	for (i = 1; i < atoi(argv[1]); i++)
